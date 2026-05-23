@@ -23,7 +23,7 @@ const STEPS = [
   {
     number: '02',
     title: 'Choose your tool',
-    desc: 'Pick from eight AI tools built for the Nigerian market — writing, coaching, invoicing, and more.',
+    desc: 'Pick from eight AI tools built for the Nigerian market. Content writing, coaching, invoicing, and more.',
   },
   {
     number: '03',
@@ -35,7 +35,7 @@ const STEPS = [
 const FAQ_ITEMS = [
   {
     q: 'What is Kreva AI?',
-    a: 'Kreva AI is a subscription platform that gives Nigerian business owners access to eight AI-powered tools — content writing, business coaching, invoicing, customer replies, logo concepts, and more — all in one place.',
+    a: 'Kreva AI is a subscription platform that gives Nigerian business owners access to eight AI-powered tools: content writing, business coaching, invoicing, customer replies, logo concepts, and more. All in one place.',
   },
   {
     q: 'Do I need a credit card to get started?',
@@ -227,7 +227,7 @@ export default function LandingPage() {
                 Eight AI tools built for Nigerian business
               </h1>
               <p className="text-muted text-base leading-relaxed mb-8">
-                Content writing, business coaching, invoicing, customer replies, and more — all in
+                Content writing, business coaching, invoicing, customer replies, and more. All in
                 one subscription. Start free, no credit card required.
               </p>
               <div className="flex flex-wrap gap-3">
@@ -265,7 +265,7 @@ export default function LandingPage() {
           <div className="text-center mb-12">
             <h2 className="section-heading text-3xl mb-3">Eight tools for your business</h2>
             <p className="text-muted text-sm max-w-sm mx-auto leading-relaxed">
-              Every tool is built for the Nigerian market — the language, the context, and the
+              Every tool is built for the Nigerian market. The language, the context, and the
               realities of doing business here.
             </p>
           </div>

@@ -6,7 +6,7 @@ export default function ToolsPage() {
       <div className="page-header -mx-6 -mt-6 mb-6">
         <h1 className="section-heading text-2xl">Tools</h1>
         <p className="text-muted text-sm mt-1">
-          {TOOLS.length} tools available — built one at a time from section 5.
+          {TOOLS.length} tools available. Coming soon.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">

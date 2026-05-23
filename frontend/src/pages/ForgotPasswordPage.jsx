@@ -6,7 +6,7 @@ export default function ForgotPasswordPage() {
       <div className="card p-8 w-full max-w-sm">
         <div className="mb-6">
           <h1 className="section-heading text-2xl mb-1">Reset your password</h1>
-          <p className="text-muted text-sm">Authentication — section 2 in the build order.</p>
+          <p className="text-muted text-sm">Authentication coming soon.</p>
         </div>
         <Link to="/login" className="text-xs text-primary hover:text-primary-hover transition-colors">
           Back to sign in

@@ -8,7 +8,7 @@ export default function DashboardPage() {
     <div className="page-content">
       <div className="page-header -mx-6 -mt-6 mb-6">
         <h1 className="section-heading text-2xl">Welcome back, {firstName}</h1>
-        <p className="text-muted text-sm mt-1">Dashboard shell — section 3 in the build order.</p>
+        <p className="text-muted text-sm mt-1">Dashboard coming soon.</p>
       </div>
     </div>
   )
