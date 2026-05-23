@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-bg text-foreground font-body;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-heading;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover
+           text-white font-medium px-4 py-2 rounded-btn text-sm
+           transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed
+           focus:outline-none focus:ring-2 focus:ring-primary/30;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 text-muted hover:text-foreground
+           hover:bg-surface-raised font-medium px-4 py-2 rounded-btn text-sm
+           transition-all duration-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 border border-border
+           hover:border-primary text-foreground font-medium px-4 py-2 rounded-btn text-sm
+           transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/20;
+  }
+
+  .card {
+    @apply bg-surface border border-border rounded-card shadow-card;
+  }
+
+  .card-hover {
+    @apply card hover:border-primary hover:shadow-card-hover transition-all duration-200 cursor-pointer;
+  }
+
+  .input {
+    @apply w-full bg-surface-raised border border-border rounded-card px-3 py-2
+           text-sm text-foreground placeholder:text-muted
+           transition-all duration-200 outline-none
+           focus:border-primary focus:ring-2 focus:ring-primary/10;
+  }
+
+  .textarea {
+    @apply input resize-none;
+  }
+
+  .select {
+    @apply input appearance-none cursor-pointer;
+  }
+
+  .label {
+    @apply block text-xs font-medium text-muted mb-1.5;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-badge text-xs font-medium;
+  }
+
+  .badge-success {
+    @apply badge bg-success/10 text-success;
+  }
+
+  .badge-warning {
+    @apply badge bg-warning/10 text-warning;
+  }
+
+  .badge-danger {
+    @apply badge bg-danger/10 text-danger;
+  }
+
+  .badge-primary {
+    @apply badge bg-primary/10 text-primary border border-primary/20;
+  }
+
+  .badge-muted {
+    @apply badge bg-surface-raised text-muted border border-border;
+  }
+
+  .section-heading {
+    @apply font-heading font-bold text-foreground tracking-heading;
+  }
+
+  .page-header {
+    @apply px-6 py-5 border-b border-border;
+  }
+
+  .page-content {
+    @apply p-6;
+  }
+
+  .divider {
+    @apply border-t border-border;
+  }
+
+  .field-error {
+    @apply text-xs text-danger mt-1;
+  }
+}
